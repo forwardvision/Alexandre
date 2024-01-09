@@ -1,0 +1,159 @@
+<!-- <!DOCTYPE HTML> -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Alexandre Financials</title>
+
+
+  <style type="text/css">
+    body {
+      font: 10.5pt arial;
+      color: #4d4d4d;
+      line-height: 150%;
+      width: 100%;
+      padding-left: 10px;
+    }
+
+    #containerLeft {
+      display: inline-block;
+      width: 500px;
+      height: 500px;
+      margin-right: 10px;
+    }
+
+    #containerRight {
+      display: inline-block;
+      width: 500px;
+      height: 500px;
+      margin-left: 10px;
+    }
+
+
+    body {
+
+      background-size: cover;
+      font-family: 'Your-Elite-Font', sans-serif;
+      text-align: center;
+
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      text-align: left;
+
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    h4 {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+    }
+
+    select,
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+
+    .side-by-side {
+      display: inline-block;
+      width: 40%;
+      margin-right: 2%;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #logo {
+      float: left;
+      margin-right: 20px;
+      width: 20%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <img id="logo" src="FVISION.png" alt="Your Logo" width="20%" height="auto">
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h4>Alexandre Financials Project</h4>
+
+    <div class="side-by-side">
+      <label for="dynamicInput" id="dynamicLabel">PDF File Path and name</label>
+      <input type="text" id="dynamicInput" placeholder="Enter value..." value="C:\Users\intern\Downloads\PDFSolutionsAnnualReportBookmarked.pdf">
+    </div>
+    <br>
+    <label for="page">Page No:</label>
+    <input type="number" id="page" name="page" value="53" min="0" step="1" size="3" style="width: 6em;">
+
+    <br>
+    <br>
+    <form>
+      <div class="side-by-side">
+        <label for="leftMargin">Left Margin:</label>
+        <input type="number" id="leftMargin" name="leftMargin" value="5" min="0" step="1" size="3" style="width: 6em;">
+
+        <label for="rightMargin">Right Margin:</label>
+        <input type="number" id="rightMargin" name="rightMargin" value="5" min="0" step="1" size="3"
+          style="width: 6em;">
+      </div>
+      <div class="side-by-side">
+        <label for="topMargin">Top Margin:</label>
+        <input type="number" id="topMargin" name="topMargin" value="25" min="0" step="1" size="3" style="width: 6em;">
+
+        <label for="bottomMargin">Bottom Margin:</label>
+        <input type="number" id="bottomMargin" name="bottomMargin" value="5" min="0" step="1" size="3"
+          style="width: 6em;">
+
+      </div>
+
+    </form>
+
+    <div class="side-by-side">
+      <button id="submitButton" type="button">Import Data</button>
+
+      <div class="side-by-side"></div>
+
+    </div>
+
+
+    <h4>Imported Data </h4>
+
+
+  </div>
+  <script src="API_Call.js"></script>
+</body>
+
+</html>
